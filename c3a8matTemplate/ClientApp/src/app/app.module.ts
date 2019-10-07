@@ -5,15 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app-material.module';
 import { ServerComponent } from './server/server.component';
-import { SubServerComponent } from './subserver/SubServer.component';
 import { TopnavComponent } from './topnav/topnav.component';
+import { FooternavComponent } from './footernav/footernav.component';
 
 @NgModule({
   declarations: [
         AppComponent,
         ServerComponent,
-        SubServerComponent,
-        TopnavComponent
+        TopnavComponent,
+        FooternavComponent
   ],
   imports: [
     BrowserModule,
