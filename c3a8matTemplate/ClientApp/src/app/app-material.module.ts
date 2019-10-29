@@ -1,29 +1,85 @@
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import {
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    //MatDatepicker,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatOptionModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatGridListModule,
+    MatTableModule,
+    ErrorStateMatcher,
+    ShowOnDirtyErrorStateMatcher
+} from '@angular/material';
 import { NgModule } from '@angular/core';
 
 @NgModule({
     imports: [LayoutModule,
-        MatSliderModule,
         MatButtonModule,
+        MatButtonToggleModule,
+        MatCardModule,
         MatCheckboxModule,
-        MatToolbarModule,
-        MatSidenavModule,
+        MatDatepickerModule,
+        //MatDatepicker,
+        MatFormFieldModule,
         MatIconModule,
-        MatListModule],
+        MatInputModule,
+        MatListModule,
+        MatMenuModule,
+        MatNativeDateModule,
+        MatOptionModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatTabsModule,
+        MatToolbarModule,
+        MatGridListModule,
+        MatTableModule
+    ],
+
     exports: [LayoutModule,
-        MatSliderModule,
         MatButtonModule,
+        MatButtonToggleModule,
+        MatCardModule,
         MatCheckboxModule,
-        MatToolbarModule,
-        MatSidenavModule,
+        MatDatepickerModule,
+        //MatDatepicker,
+        MatFormFieldModule,
         MatIconModule,
-        MatListModule]
+        MatInputModule,
+        MatListModule,
+        MatMenuModule,
+        MatNativeDateModule,
+        MatOptionModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatTabsModule,
+        MatToolbarModule,
+        MatGridListModule,
+        MatTableModule,
+    ],
+    declarations: [],
+    providers: [
+        { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
+    ],
 })
 export class AppMaterialModule { }

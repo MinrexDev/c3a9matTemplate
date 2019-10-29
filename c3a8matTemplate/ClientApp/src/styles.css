@@ -1,10 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-//styles from thead prefixed template
+/* CSS de plantilla predeterminada Angular 8 - blue-pink modificada */
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;
@@ -470,7 +465,8 @@ input.mat-input-element {
 .mat-toolbar h5,
 .mat-toolbar h6 {
   font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
-  margin: 0
+  margin: 0;
+  height: 42px;
 }
 
 .mat-tooltip {
@@ -2816,4 +2812,14 @@ th.mat-header-cell {
 
 .mat-simple-snackbar-action {
   color: inherit
+}
+/*CSS globales de la plantilla */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
