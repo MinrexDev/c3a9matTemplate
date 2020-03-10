@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
@@ -42,6 +43,11 @@ namespace c3a8matTemplate
                 app.UseHsts();
             }
 
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+                {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())
